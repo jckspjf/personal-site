@@ -1,4 +1,4 @@
- User-agent: 2^32$
+User-agent: 2^32$
 User-agent: AbliterantBot
 User-agent: AddSearchBot
 User-agent: AdsBot-Google
