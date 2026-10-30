@@ -1,6 +1,6 @@
 @font-face {
     font-family: "WormTown9k";
-    src: url("resources/fonts/Wormtown9k-11px7pt.ttf") format("truetype");
+    src: url("./resources/fonts/Wormtown9k-11px7pt.ttf") format("truetype");
     font-weight: normal;
     font-style: normal
 }
