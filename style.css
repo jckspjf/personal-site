@@ -65,7 +65,7 @@ div.main, div.main404 {
     box-sizing: border-box;
     background-color: #202020;
     width: 100%;
-    border: 2px dashed rgb(61, 95, 248);
+    border: 2px dashed #3D5FF8;
 }
 
 div.main404 {
@@ -81,6 +81,25 @@ div.main404 {
 }
 
 .mainTR {
+    border: 2px dashed #7acb58;
+    right: -265px;
+    display: block;
+    position: absolute;
+}
+
+.iframe-wrapper {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.iframe-wrapper iframe {
+    height: calc(100% + 100px);
+    border: none;
+    transform: translateY(-50px);
+}
+
+.subTR {
     position: absolute;
     top: -50px;
     right: 0;
@@ -141,7 +160,7 @@ a:visited, a:hover, .randomTextContainer > a:hover {
     color: #7acb58;
 }
 
-a:hover {
+a:hover *:not(.subTR) {
     background-color: #333333;
     text-decoration: none;
 }
@@ -189,7 +208,7 @@ h1.mainHead:hover, h2.mainHead:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: rgb(61, 95, 248);
+    color: #3D5FF8;
     cursor: pointer;
     font-size: 14px;
 }
@@ -203,7 +222,7 @@ h1.mainHead:hover, h2.mainHead:hover {
     width: 36px;
     height: 18px;
     background-color: #444;
-    border: 1px solid rgb(61, 95, 248);
+    border: 1px solid #3D5FF8;
     border-radius: 20px;
     transition: 0.2s;
 }
@@ -215,13 +234,13 @@ h1.mainHead:hover, h2.mainHead:hover {
     height: 12px;
     left: 3px;
     top: 2px;
-    background-color: rgb(61, 95, 248);
+    background-color: #3D5FF8;
     border-radius: 50%;
     transition: 0.2s;
 }
 
 .fontSlider input:checked + .slider {
-    background-color: rgb(61, 95, 248);
+    background-color: #3D5FF8;
 }
 
 .fontSlider input:checked + .slider::before {
