@@ -52,6 +52,7 @@ div.main {
     border-radius: 50%;
     margin-left: -225px;
     display: block;
+    position: absolute;
 }
 
 .mainTR {
@@ -60,8 +61,32 @@ div.main {
     right: 0;
 }
 
-.mainTL {
+.selfInfo {
     position: absolute;
+    margin-left: -225px;
+    margin-top: 210px;
+    max-width: 200px;
+    min-width: 0;
+    color: #FFF;
+}
+
+.selfInfo > p {
+    font-size: 10px;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+a:link {
+    color: #a3ff7c;
+}
+
+a:visited {
+    color: #7acb58;
+}
+
+a:hover {
+    background-color: #333333;
+    text-decoration: none;
 }
 
 h1.mainHead {
