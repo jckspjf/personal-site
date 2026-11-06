@@ -13,16 +13,21 @@ i {
     font-style: italic
 }
 html, body {
-    height: 100%;
-    align-items: center;
+    min-height: 100%;
     background-color: #161616;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body.accessibleFont {
     font-family: "Atkinson Hyperlegible", Arial, sans-serif;
 }
 
-.header, #randomText {
+.header, #randomText, #error {
     text-align: center;
     color: rgb(61, 95, 248);
     margin-bottom: 20px;
@@ -31,7 +36,7 @@ body.accessibleFont {
 
 .mainContainer {
     position: relative;
-    width: 680px;
+    width: min(680px, calc(100% - 32px));
     margin: 50px auto;
 }
 
@@ -118,15 +123,12 @@ h1.mainHead:hover, h2.mainHead:hover {
     text-decoration: none;
 }
 
-.footer, .footer404 {
+.footer {
     background-color: rgb(61, 95, 248);
     margin-top: auto;
     margin-bottom: 10px;
     text-align: center;
-}
-
-div.footer404 {
-    margin-top: 2000px;
+    width: 100%;
 }
 
 .subTL {
