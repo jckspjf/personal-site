@@ -131,10 +131,15 @@ h1.mainHead:hover, h2.mainHead:hover {
     width: 100%;
 }
 
-.subTL {
+.subTL, .subTL404 {
     position: absolute;
     top: -25px;
     left: 0;
+}
+
+.subTL404 {
+    top: 170px;
+    left: 340px;
 }
 
 .fontSlider {
