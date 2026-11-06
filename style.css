@@ -81,19 +81,39 @@ div.main404 {
 }
 
 .mainTR {
-    border: 2px dashed #7acb58;
     right: -265px;
-    display: block;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #FFF;
+    width: 250px;
+}
+
+.contactInfo {
+    width: 100%;
+    font-size: 12px;
+}
+
+.contactInfo p {
+    margin: 0;
+}
+
+.contactInfo > p > a:hover {
+    background-color: #333333;
 }
 
 .iframe-wrapper {
+    width: 250px;
     height: 400px;
     overflow: hidden;
     position: relative;
+    border: 2px dashed #7acb58;
+    box-sizing: border-box;
 }
 
 .iframe-wrapper iframe {
+    width: 100%;
     height: calc(100% + 100px);
     border: none;
     transform: translateY(-50px);
@@ -152,7 +172,7 @@ div.main404 {
     white-space: pre;
 }
 
-a:link, .selfInfo > p > strong, .buttons > p > strong, body > h1 > strong, sup {
+a:link, .selfInfo > p > strong, .buttons > p > strong, body > h1 > strong, sup, .contactInfo > p > strong {
     color: #a3ff7c;
 }
 
@@ -193,15 +213,17 @@ h1.mainHead:hover, h2.mainHead:hover {
     width: 100%;
 }
 
-.subTL, .subTL404 {
+.subTL {
     position: absolute;
     top: -25px;
     left: 0;
 }
 
 .subTL404 {
+    position: absolute;
     top: 170px;
-    left: 340px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .fontSlider {
