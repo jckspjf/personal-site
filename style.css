@@ -35,7 +35,7 @@ body.accessibleFont {
     margin: 50px auto;
 }
 
-div.main {
+div.main, div.main404 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -45,6 +45,10 @@ div.main {
     background-color: #202020;
     width: 100%;
     border: 2px dashed rgb(61, 95, 248);
+}
+
+div.main404 {
+    min-height: 140px;
 }
 
 .pfp {
@@ -102,16 +106,27 @@ h1.mainHead {
     display: inline-block;
 }
 
-h1.mainHead:hover {
+h2.mainHead {
+    position: absolute;
+    top: 0;
+    margin-top: 80px;
+    color: #7acb58
+}
+
+h1.mainHead:hover, h2.mainHead:hover {
     background-color: #333333;
     text-decoration: none;
 }
 
-.footer {
+.footer, .footer404 {
     background-color: rgb(61, 95, 248);
     margin-top: auto;
     margin-bottom: 10px;
     text-align: center;
+}
+
+div.footer404 {
+    margin-top: 2000px;
 }
 
 .subTL {
