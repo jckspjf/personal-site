@@ -27,6 +27,18 @@ body.accessibleFont {
     font-family: "Atkinson Hyperlegible", Arial, sans-serif;
 }
 
+.randomTextContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.randomTextContainer > a {
+    cursor: pointer;
+    color: #a3ff7c;
+    font-size: 18px;
+}
+
 .header, #randomText, #error {
     text-align: center;
     color: rgb(61, 95, 248);
@@ -94,7 +106,7 @@ a:link, .selfInfo > p > strong {
     color: #a3ff7c;
 }
 
-a:visited, a:hover {
+a:visited, a:hover, .randomTextContainer > a:hover {
     color: #7acb58;
 }
 

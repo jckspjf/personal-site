@@ -23,3 +23,7 @@ fontToggle.addEventListener("change", () => {
 });
 
 document.getElementById('randomText').textContent = texts[Math.floor(Math.random() * texts.length)];
+
+var randomText = function() {
+    document.getElementById('randomText').textContent = texts[Math.floor(Math.random() * texts.length)];
+};
