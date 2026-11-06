@@ -52,6 +52,10 @@ body.accessibleFont {
     margin: 50px auto;
 }
 
+.main > p {
+    color: #FFF;
+}
+
 div.main, div.main404 {
     position: relative;
     display: flex;
@@ -82,27 +86,54 @@ div.main404 {
     right: 0;
 }
 
-.selfInfo {
-    position: absolute;
+.footnotes {
+    background-color: #1b1b1b;
+    border: 1px dotted #444;
+    padding: 8px 12px;
+    margin-top: 10px;
+    font-size: 10px;
+    opacity: 0.85;
+    color: #FFF;
+}
+
+.footnotes > p {
+    margin: 0;
+}
+
+.footnotes > a {
+    text-decoration: none;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-left: -225px;
     margin-top: 210px;
     max-width: 200px;
     min-width: 0;
     color: #FFF;
+    position: absolute;
 }
 
 .selfInfo *:not(summary) {
     background-color: #202020;
 }
 
-.selfInfo > p {
+.selfInfo > p, .buttons > p {
     font-size: 12px;
     overflow-wrap: anywhere;
     white-space: normal;
     background-color: #202020;
 }
 
-a:link, .selfInfo > p > strong {
+#text-preview {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+a:link, .selfInfo > p > strong, .buttons > p > strong, body > h1 > strong, sup {
     color: #a3ff7c;
 }
 
