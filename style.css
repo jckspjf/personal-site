@@ -70,17 +70,22 @@ div.main {
     color: #FFF;
 }
 
+.selfInfo *:not(summary) {
+    background-color: #202020;
+}
+
 .selfInfo > p {
     font-size: 10px;
     overflow-wrap: anywhere;
     white-space: normal;
+    background-color: #202020;
 }
 
-a:link {
+a:link, .selfInfo > p > strong {
     color: #a3ff7c;
 }
 
-a:visited {
+a:visited, a:hover {
     color: #7acb58;
 }
 
