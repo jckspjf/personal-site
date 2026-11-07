@@ -4,6 +4,14 @@ div.main.postMain {
     padding: 24px;
 }
 
+.siteNav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 0 0 12px;
+    font-size: 14px;
+}
+
 .postNav {
     display: flex;
     justify-content: space-between;
@@ -12,6 +20,12 @@ div.main.postMain {
     padding-bottom: 12px;
     border-bottom: 1px dotted #444;
     font-size: 14px;
+}
+
+.postNavBack {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .postNav a {
@@ -196,6 +210,36 @@ div.main.postMain {
     border: 1px solid #555;
     padding: 6px 10px;
     text-align: left;
+}
+
+.blogList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blogEntry {
+    border-bottom: 1px dotted #444;
+    padding: 16px 0;
+}
+
+.blogEntry h2 {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.blogEntry time {
+    color: #888;
+    font-size: 13px;
+}
+
+.blogEntry p {
+    color: #ccc;
+    margin: 8px 0 0;
+}
+
+.blogStatus {
+    color: #aaa;
 }
 
 .postContent p {

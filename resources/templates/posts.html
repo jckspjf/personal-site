@@ -12,8 +12,9 @@
     <link rel="shortcut icon" href="/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Director's blog" href="/rss.xml">
     <meta name="robots" content="noai, noimageai">
-    <meta name="description" content="<!--# block name="description" --><!--# endblock -->">
+    <meta name="description" content="<!--# block name="description" --><!--# endblock -->
 </head>
 <body>
     <h1 class="header"><span id="time"></span>, <strong>Director.</strong></h1>
@@ -24,7 +25,10 @@
     <div class="mainContainer">
         <div class="main postMain">
             <nav class="postNav">
-                <a href="/">← back to main</a>
+                <div class="postNavBack">
+                    <a href="/blog.html">← all posts</a>
+                    <a href="/">home</a>
+                </div>
                 <div class="postNavEntries">
                     <a id="prevPost" href="#">← prev</a>
                     <span>|</span>
@@ -40,7 +44,10 @@
                 <!--# block name="content" --><!--# endblock -->
             </article>
             <nav class="postNav postNavBottom">
-                <a href="/">← back to main</a>
+                <div class="postNavBack">
+                    <a href="/blog.html">← all posts</a>
+                    <a href="/">home</a>
+                </div>
                 <div class="postNavEntries">
                     <a id="prevPostBottom" href="#">← previous entry</a>
                     <span>|</span>

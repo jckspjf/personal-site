@@ -23,6 +23,10 @@ body {
     align-items: center;
 }
 
+.siteNav {
+    color: #a3ff7c;
+}
+
 body.accessibleFont {
     font-family: "Atkinson Hyperlegible", Arial, sans-serif;
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jckspjf's blog</title>
+    <link>https://jckspjf.nekoweb.org/blog.html</link>
+    <description>Posts from an infinitesimal point in time, somewhere.</description>
+    <language>en-us</language>
+    <atom:link href="https://jckspjf.nekoweb.org/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Nov 2026 01:32:55 GMT</lastBuildDate>
+    <item>
+      <title>Hello world!</title>
+      <link>https://jckspjf.nekoweb.org/posts/2026-11-06-helloWorld.html</link>
+      <guid isPermaLink="true">https://jckspjf.nekoweb.org/posts/2026-11-06-helloWorld.html</guid>
+      <pubDate>Fri, 06 Nov 2026 20:10:00 GMT</pubDate>
+      <description>Y&apos;know, other general tests of a blog system, as one does.</description>
+    </item>
+  </channel>
+</rss>
