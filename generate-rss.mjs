@@ -9,7 +9,24 @@ const escapeXml = value => String(value ?? "").replace(/[&<>"']/g, character => 
     '"': "&quot;",
     "'": "&apos;"
 }[character]));
+  const formatRssDate = date => {
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/New_York",
+      weekday: "short",
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hourCycle: "h23",
+      timeZoneName: "longOffset"
+    }).formatToParts(date);
+    const part = type => parts.find(value => value.type === type)?.value;
+    const offset = part("timeZoneName").replace("GMT", "").replace(":", "");
 
+    return `${part("weekday")}, ${part("day")} ${part("month")} ${part("year")} ${part("hour")}:${part("minute")}:${part("second")} ${offset}`;
+  };
 const index = await readJson("./posts.json");
 const posts = await Promise.all(index.posts.map(async id => ({
     id,

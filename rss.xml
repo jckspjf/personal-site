@@ -1,18 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>jckspjf's blog</title>
-    <link>https://jckspjf.nekoweb.org/blog.html</link>
-    <description>Posts from an infinitesimal point in time, somewhere.</description>
-    <language>en-us</language>
-    <atom:link href="https://jckspjf.nekoweb.org/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sat, 07 Nov 2026 01:32:55 GMT</lastBuildDate>
-    <item>
-      <title>Hello world!</title>
-      <link>https://jckspjf.nekoweb.org/posts/2026-11-06-helloWorld.html</link>
-      <guid isPermaLink="true">https://jckspjf.nekoweb.org/posts/2026-11-06-helloWorld.html</guid>
-      <pubDate>Fri, 06 Nov 2026 20:10:00 GMT</pubDate>
-      <description>Y&apos;know, other general tests of a blog system, as one does.</description>
-    </item>
-  </channel>
+<rss version="2.0">
+<channel>
+<title>jckspjf's blog</title>
+<link>https://jckspjf.nekoweb.org/blog.html</link>
+<description>
+Posts from an infinitesimal point in time, somewhere.
+</description>
+<language>en-us</language>
+<atom:link href="https://jckspjf.nekoweb.org/rss.xml" rel="self" type="application/rss+xml"/>
+<lastBuildDate>Fri, 06 Nov 2026 21:01:20 -0500</lastBuildDate>
+<item>
+<title>Lyricism</title>
+<link>
+https://jckspjf.nekoweb.org/posts/2026-11-06-lyricism.html
+</link>
+<guid isPermaLink="true">
+https://jckspjf.nekoweb.org/posts/2026-11-06-lyricism.html
+</guid>
+<pubDate>Fri, 06 Nov 2026 20:54:00 -0500</pubDate>
+<description>
+''Can I open up, is it safe, or not? I'm afraid a little, you relate, or not?''
+</description>
+</item>
+<item>
+<title>Hello world!</title>
+<link>
+https://jckspjf.nekoweb.org/posts/2026-11-06-helloWorld.html
+</link>
+<guid isPermaLink="true">
+https://jckspjf.nekoweb.org/posts/2026-11-06-helloWorld.html
+</guid>
+<pubDate>Fri, 06 Nov 2026 20:10:00 -0500</pubDate>
+<description>
+Y'know, other general tests of a blog system, as one does.
+</description>
+</item>
+</channel>
 </rss>
