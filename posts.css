@@ -263,3 +263,7 @@ div.main.postMain {
         margin-left: auto;
     }
 }
+
+hr {
+    border-style: dashed;
+}
