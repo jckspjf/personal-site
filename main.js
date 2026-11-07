@@ -14,18 +14,28 @@ const fontToggle = document.getElementById("fontToggle");
 const savedFont = localStorage.getItem("accessibleFont") === "true";
 
 document.body.classList.toggle("accessibleFont", savedFont);
-fontToggle.checked = savedFont;
 
-fontToggle.addEventListener("change", () => {
-    const enabled = fontToggle.checked;
+if (fontToggle) {
+    fontToggle.checked = savedFont;
 
-    document.body.classList.toggle("accessibleFont", enabled);
-    localStorage.setItem("accessibleFont", enabled);
-});
+    fontToggle.addEventListener("change", () => {
+        const enabled = fontToggle.checked;
 
-document.getElementById('randomText').textContent = texts[Math.floor(Math.random() * texts.length)];
+        document.body.classList.toggle("accessibleFont", enabled);
+        localStorage.setItem("accessibleFont", enabled);
+    });
+}
+
+const randomTextElement = document.getElementById("randomText");
+if (randomTextElement) {
+    randomTextElement.textContent = texts[Math.floor(Math.random() * texts.length)];
+}
+
 var randomText = function() {
-    document.getElementById('randomText').textContent = texts[Math.floor(Math.random() * texts.length)];
+    const element = document.getElementById("randomText");
+    if (element) {
+        element.textContent = texts[Math.floor(Math.random() * texts.length)];
+    }
 };
 
 var today = new Date()
@@ -39,4 +49,7 @@ if (presentHr < 12) {
 } else {
     var time = "evening";
 }
-document.getElementById("time").textContent = time;
+const timeElement = document.getElementById("time");
+if (timeElement) {
+    timeElement.textContent = time;
+}

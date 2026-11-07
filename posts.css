@@ -1,0 +1,93 @@
+div.main.postMain {
+    display: block;
+    min-height: 0;
+    padding: 24px;
+}
+
+.postNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px dotted #444;
+    font-size: 14px;
+}
+
+.postNav a {
+    color: #3D5FF8;
+    text-decoration: none;
+}
+
+.postNav a:hover {
+    text-decoration: underline;
+}
+
+.postNavEntries {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.postNavEntries span {
+    color: #666;
+}
+
+.postHeader {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.postHeader .mainHead {
+    position: static;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.postDate {
+    color: #888;
+    font-size: 13px;
+    margin: 0;
+}
+
+.postDescription {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.postDivider {
+    border: none;
+    border-top: 1px dotted #444;
+    margin: 20px 0;
+}
+
+.postContent {
+    line-height: 1.7;
+    min-height: 150px;
+    color: #fff;
+}
+
+.postContent p {
+    margin-bottom: 15px;
+}
+
+.postNavBottom {
+    margin-top: 35px;
+    padding-top: 12px;
+    padding-bottom: 0;
+    border-top: 1px dotted #444;
+    border-bottom: none;
+}
+
+@media (max-width: 500px) {
+    .postNav {
+        flex-wrap: wrap;
+    }
+
+    .postNavEntries {
+        margin-left: auto;
+    }
+}
