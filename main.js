@@ -23,7 +23,19 @@ fontToggle.addEventListener("change", () => {
 });
 
 document.getElementById('randomText').textContent = texts[Math.floor(Math.random() * texts.length)];
-
 var randomText = function() {
     document.getElementById('randomText').textContent = texts[Math.floor(Math.random() * texts.length)];
 };
+
+var today = new Date()
+var presentHr = today.getHours()
+var time = null;
+
+if (presentHr < 12) {
+    var time = "morning";
+} else if (presentHr < 18) {
+    var time = "afternoon";
+} else {
+    var time = "evening";
+}
+document.getElementById("time").textContent = time;
