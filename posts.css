@@ -137,6 +137,54 @@ div.main.postMain {
     padding: 0;
 }
 
+.postContent pre code.hljs {
+    color: #d8dee9;
+}
+
+.postContent .hljs-comment,
+.postContent .hljs-quote {
+    color: #8b949e;
+    font-style: italic;
+}
+
+.postContent .hljs-keyword,
+.postContent .hljs-selector-tag,
+.postContent .hljs-literal,
+.postContent .hljs-section {
+    color: #ff7b72;
+}
+
+.postContent .hljs-string,
+.postContent .hljs-attr,
+.postContent .hljs-template-variable,
+.postContent .hljs-addition {
+    color: #a5d6ff;
+}
+
+.postContent .hljs-number,
+.postContent .hljs-regexp,
+.postContent .hljs-variable,
+.postContent .hljs-symbol {
+    color: #79c0ff;
+}
+
+.postContent .hljs-title,
+.postContent .hljs-title.function_,
+.postContent .hljs-title.class_ {
+    color: #d2a8ff;
+}
+
+.postContent .hljs-type,
+.postContent .hljs-built_in,
+.postContent .hljs-class .hljs-title {
+    color: #ffa657;
+}
+
+.postContent .hljs-meta,
+.postContent .hljs-meta .hljs-keyword {
+    color: #d2a8ff;
+}
+
 .postContent table {
     border-collapse: collapse;
     margin: 1em 0;

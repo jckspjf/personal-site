@@ -58,6 +58,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             document.querySelector(".postHeader").appendChild(description);
         }
 
+        if (window.hljs) {
+            document.querySelectorAll(".postContent pre code").forEach(code => {
+                window.hljs.highlightElement(code);
+            });
+        }
+
     } catch (error) {
         console.error("Failed to load post metadata:", error);
     }
