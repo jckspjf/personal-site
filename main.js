@@ -2,10 +2,11 @@ var texts = [
     "C'est la vie.",
     "The Devil's in the details.",
     "Every Bird must leave its Nest.",
-    "Every Nest should support a Bird",
+    "Every Nest should support a Bird.",
     "Per Aspera Ad Astra.",
     "Mercury, Venus, Terra, Mars... wait, Terra?",
-    "Watching, for 'your' safety.. we swear."
+    "Watching, for 'your' safety.. we swear.",
+    "Your body betrays your degeneracy."
 ];
 
 const fontToggle = document.getElementById("fontToggle");
