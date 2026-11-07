@@ -70,6 +70,86 @@ div.main.postMain {
     color: #fff;
 }
 
+.postContent h1,
+.postContent h2,
+.postContent h3,
+.postContent h4,
+.postContent h5,
+.postContent h6 {
+    color: #a3ff7c;
+    margin: 1.4em 0 0.6em;
+}
+
+.postContent ul,
+.postContent ol {
+    margin: 0 0 1em;
+    padding-left: 1.75em;
+}
+
+.postContent li + li {
+    margin-top: 0.35em;
+}
+
+.postContent ul ul,
+.postContent ol ol,
+.postContent ul ol,
+.postContent ol ul {
+    margin-top: 0.35em;
+    margin-bottom: 0.35em;
+}
+
+.postContent li::marker {
+    color: #a3ff7c;
+}
+
+.postContent blockquote {
+    border-left: 3px solid #3d5ff8;
+    color: #ccc;
+    margin: 1em 0;
+    padding-left: 1em;
+}
+
+.postContent code,
+.postContent pre {
+    font-family: monospace;
+}
+
+.postContent :not(pre) > code {
+    background: #161616;
+    border: 1px solid #444;
+    padding: 0.1em 0.3em;
+}
+
+.postContent pre {
+    background: #161616;
+    border: 1px dotted #555;
+    box-sizing: border-box;
+    margin: 1em 0;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 12px;
+    tab-size: 4;
+}
+
+.postContent pre code {
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+.postContent table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    max-width: 100%;
+}
+
+.postContent th,
+.postContent td {
+    border: 1px solid #555;
+    padding: 6px 10px;
+    text-align: left;
+}
+
 .postContent p {
     margin-bottom: 15px;
 }
